@@ -1,7 +1,81 @@
-body,
-html {
-  /* height:100%; */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
 
-  margin: 0px;
-  padding: 0px;
+body {
+  font-family: Arial, sans-serif; /* Set the font for the body */
+  background-color: #f4c2c2; /* Light gray background color */
+  color: #333; /* Dark gray text color */
+}
+
+#app {
+  max-width: 1200px; 
+  margin: 0 auto; /* Center the app horizontally */
+  padding: 20px; /* Add padding around the app */
+}
+
+header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Space between header elements */
+  align-items: center; /* Center items vertically */
+  background-color: #e84f4f; /* Dark background for header */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding inside the header */
+}
+
+h1 {
+  font-size: 2.5rem; /* Size */
+}
+
+nav ul {
+  display: flex; /*  navigation links */
+  list-style: none; /* Remove  styling */
+  padding: 0; /* Remove  padding */
+}
+
+nav ul li {
+  margin-left: 15px; /* Space navigation links */
+}
+
+nav ul li a {
+  color: #fff; /* White text color for links */
+}
+
+main {
+  display: grid; /* Use grid layout for store items */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px 0; /* Padding above and below the main content */
+}
+
+.store-item {
+  background-color: #dedcdc; /* White background for store items */
+  
+  padding: 15px; /* Padding inside each store item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center text inside store items */
+}
+
+.store-item img {
+  max-width: 100%; /* Responsive image size */
+  margin-bottom: 10px; /* Space below images */
+}
+
+.store-item p {
+  margin-bottom: 8px; /* Space below item descriptions */
+}
+
+.store-item span {
+  display: block; /* Each span on a new line */
+  margin-bottom: 5px; /* Space below spans */
+}
+
+footer {
+  text-align: center; /* Center text in the footer */
+  padding: 10px 0; /* Padding above and below footer text */
+  background-color: #050404; /* Dark background for footer */
+  color: #fff; /* White text color for footer */
+  margin-top: 20px; /* Space above footer */
 }
