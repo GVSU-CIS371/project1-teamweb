@@ -1,7 +1,82 @@
-body,
-html {
-  /* height:100%; */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
 
-  margin: 0px;
-  padding: 0px;
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #65a1e6;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.store-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+
+.store-item img {
+  max-width: 25%;
+  height: auto;
+}
+
+.store-item p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.store-item span {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: end;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #65a1e6;
 }
